@@ -80,17 +80,9 @@ if __name__ == '__main__':
     imagePath = 'E:\Pycharm Project\PerfCompare\kitten_224.png'
     if not tf.gfile.Exists(imagePath):
         tf.logging.fatal('File does not exist %s', imagePath)
-    # image_data = tf.gfile.FastGFile(image, 'rb').read()
-    # img = Image.open(imagePath)
-    # image_data = np.asarray(img, dtype="float32")
-    # input_data = np.empty((1, 224, 224, 3), dtype="float32")
-    #
-    #
-    # input_data[0,:,:,:] = image_data[:,:,0:3]
-    # input_data = np.transpose(input_data, (0, 3, 1, 2))
     
-    # input_data = np.random.rand(1, 224, 224, 3)
-    input_data = np.random.rand(1, 1, 150528)
+    input_data = np.random.rand(1, 224, 224, 3)
+    # input_data = np.random.rand(1, 1, 150528)
     
     with tf.Session(graph=graph) as sess:
         start_time = time.time()
