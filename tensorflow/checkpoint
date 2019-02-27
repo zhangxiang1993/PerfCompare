@@ -1,2 +1,0 @@
-model_checkpoint_path: "mobilenet_tf_forward.ckpt"
-all_model_checkpoint_paths: "mobilenet_tf_forward.ckpt"

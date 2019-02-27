@@ -1,11 +1,10 @@
 import tensorflow as tf
-from tensorflow.python.framework import graph_util
 import time
 from datetime import datetime
 import math
 import argparse
 import sys
-from mobilenet import mobilenet, mobilenet_arg_scope
+from mobilenet.mobilenet import mobilenet, mobilenet_arg_scope
 import numpy as np
 
 slim = tf.contrib.slim

@@ -20,12 +20,6 @@ def load_graph(frozen_graph_filename):
 
     return graph
 
-def HWC_to_CHW(data):
-    if(len(data.shape) == 3):
-        return tf.transpose(data, [2, 0, 1])
-    if(len(data.shape) == 4):
-        return tf.transpose(data, [0, 3, 1, 2])
-
 def print_op_names(graph):
     # We can verify that we can access the list of operations in the graph
     for op in graph.get_operations():
@@ -63,8 +57,7 @@ models = [
      }
 ]
 
-
-if __name__ == '__main__':
+def evaluate_frozen_graph():
     model_idx = 4
     total_start = time.time()
     # Loading Model
@@ -80,17 +73,39 @@ if __name__ == '__main__':
     imagePath = 'E:\Pycharm Project\PerfCompare\kitten_224.png'
     if not tf.gfile.Exists(imagePath):
         tf.logging.fatal('File does not exist %s', imagePath)
-    
+
     input_data = np.random.rand(1, 224, 224, 3)
     # input_data = np.random.rand(1, 1, 150528)
-    
+
     with tf.Session(graph=graph) as sess:
         start_time = time.time()
         predictions = sess.run(y, {x: input_data})
         end_time = time.time()
         print('\nPredict: {:.4f} millionseconds'.format((end_time - start_time) * 1000))
-    # print (predictions[0])
+    print (predictions[0])
     total_end = time.time()
     print('\ntotal: {:.4f} millionseconds'.format((total_end - total_start) * 1000))
 
+
+def eval_checkpoint():
+    with tf.Session() as sess:
+        # First let's load meta graph and restore weights
+        saver = tf.train.import_meta_graph('mobilenet_tf_forward.ckpt.meta')
+        saver.restore(sess, tf.train.latest_checkpoint('./'))
+        graph = tf.get_default_graph()
+        print_op_names(graph)
+        input = graph.get_tensor_by_name('MobileNet/Reshape:0')
+        output = graph.get_tensor_by_name('MobileNet/Predictions/Softmax:0')
+
+        input_data = np.random.rand(1, 224, 224, 3)
+
+        start_time = time.time()
+        result = sess.run(output, feed_dict={input: input_data})
+        end_time = time.time()
+        print('\nPredict: {:.4f} millionseconds'.format((end_time - start_time) * 1000))
+        print(result)
+
+if __name__ == '__main__':
+    # eval_checkpoint()
+    evaluate_frozen_graph()
 

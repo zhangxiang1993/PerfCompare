@@ -5,15 +5,23 @@ import keras
 import numpy as np
 import time
 
-model = Sequential()
-model.add(SimpleRNN(32, input_shape=(1, 150528), activation='tanh'))
+def keras_rnn():
+  model = Sequential()
+  model.add(SimpleRNN(32, input_shape=(1, 150528), activation='tanh'))
+  return model
 
-X = np.random.rand(1, 1, 150528)
-t = time.time()
-print (model.predict(X))
-print ('time for Keras Simple RNN: %s ms' % ((time.time()-t) * 1000))
+def eval_keras_rnn():
+  model = keras_rnn()
+  X = np.random.rand(1, 1, 150528)
+  t = time.time()
+  print (model.predict(X))
+  print ('time for Keras Simple RNN: %s ms' % ((time.time()-t) * 1000))
 
-model.save('keras_rnn.h5')
+  # save keras model
+  model.save('keras_rnn.h5')
+
+if __name__ == '__main__':
+  eval_keras_rnn()
 
 
 

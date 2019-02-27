@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.python.framework import graph_util
-from mobilenet import mobilenet, mobilenet_arg_scope
-import numpy as np
+from mobilenet.mobilenet import mobilenet, mobilenet_arg_scope
+
 slim = tf.contrib.slim
 
 def save_mobilenet():

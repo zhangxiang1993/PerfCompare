@@ -6,9 +6,9 @@ import torchvision.models as models
 from torch.autograd import Variable
 
 
-class MobileNet(nn.Module):
+class torch_mobilenet(nn.Module):
     def __init__(self):
-        super(MobileNet, self).__init__()
+        super(torch_mobilenet, self).__init__()
 
         def conv_bn(inp, oup, stride):
             return nn.Sequential(
@@ -54,23 +54,17 @@ class MobileNet(nn.Module):
         return x
 
 
-def speed(model, name):
-    t0 = time.time()
+def eval_torch_mobilenet():
+    model = torch_mobilenet()
     input = Variable(torch.rand(1, 3, 224, 224))
+    t0 = time.time()
+    _ = model(input)
     t1 = time.time()
-
-    _ = model(input)
-    t2 = time.time()
-
-    _ = model(input)
-    t3 = time.time()
-    print('%10s : %f ms' % (name, (t2 - t1) * 1000))
-    print('%10s : %f ms' % (name, (t3 - t2) * 1000))
-
-
-if __name__ == '__main__':
-    mobilenet = MobileNet()
+    print('time for torch mobilenet : %f ms' % ((t1 - t0) * 1000))
     # dummy_input = Variable(torch.rand(1, 3, 224, 224))
     # torch.onnx.export(mobilenet, dummy_input, "MobileNet_V1_From_Torch.onnx")
 
-    speed(mobilenet, 'mobilenet')
+
+if __name__ == '__main__':
+
+    eval_torch_mobilenet()
