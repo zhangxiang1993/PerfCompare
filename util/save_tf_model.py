@@ -1,6 +1,12 @@
 import tensorflow as tf
 from tensorflow.python.framework import graph_util
 
+
+def print_op_names(graph):
+    # We can verify that we can access the list of operations in the graph
+    for op in graph.get_operations():
+        print(op.name)
+
 def save_to_ckpt(session, destination):
     saver = tf.train.Saver(max_to_keep=1)
     saver.save(session, destination)

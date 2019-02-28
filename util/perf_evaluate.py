@@ -1,7 +1,7 @@
 import tensorflow as tf
 import time, datetime, math
 
-NUM_STEPS_BURN_IN = 10
+NUM_STEPS_BURN_IN = 1
 NUM_BATCHES = 100
 
 def time_run_mobilenet(framework, model=None, input=None, session=None, target=None, feed_dict=None, info_string=None):
@@ -18,15 +18,17 @@ def time_run_mobilenet(framework, model=None, input=None, session=None, target=N
     elif 'keras' == framework:
       _ = model.predict(input)
     duration = time.time() - start_time
+    if i == 0:
+      print('%s across first run, %.3f' % (info_string, duration * 1000))
     if i >= NUM_STEPS_BURN_IN:
-      if not i % 10:
-        print('%s: step %d, duration = %.3f' % (datetime.now(), i - NUM_STEPS_BURN_IN, duration))
+      # if not i % 10:
+        # print('%s: step %d, duration = %.3f' % (datetime.now(), i - NUM_STEPS_BURN_IN, duration))
       total_duration += duration
       total_duration_squared += duration * duration
   mn = total_duration / NUM_BATCHES
   vr = total_duration_squared / NUM_BATCHES - mn * mn
   sd = math.sqrt(vr)
-  print('%s: %s across %d steps, %.3f +/- %.3f sec / batch' % (datetime.now(), info_string, NUM_BATCHES, mn, sd))
+  print('%s across %d steps, %.3f +/- %.3f ms / batch' % (info_string, NUM_BATCHES, mn*1000, sd*1000))
 
 
 
