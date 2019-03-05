@@ -2,35 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db54ee2b-65e4-446b-86c3-276d20a246b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/coreml_MobileNet.onnx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/time_benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/concatenate_pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/mobilenet_v1_1.0_224_frozen.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch_models/mobilenet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch_models/mobilenet_pth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch_models/mobilenet_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytorch_models/mobilenet_v1_1.0_224.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PerfCompare.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PerfCompare.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keras/keras_mobilenet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keras/keras_rnn.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keras/keras_simple_rnn.onnx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Keras/keras_simple_rnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/MobileNet_V1_From_Torch.onnx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/mobilenetV1_torch.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/pytorch_rnn.onnx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch/pytorch_rnn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/RNN/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/RNN/tf_RNN.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/RNN/tf_RNN.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/RNN/tf_RNN.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/RNN/tf_RNN.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/RNN/tf_RNN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/mobilenet/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/mobilenet/mobilenet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/mobilenet/mobilenet_tf.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/mobilenet/mobilenet_tf_forward.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/mobilenet/mobilenet_tf_forward.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/mobilenet/mobilenet_tf_forward.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/save_tensorflow_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/tensorflow_cpu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow/time_benchmark.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/perf_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/perf_evaluate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/save_tf_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/save_tf_model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,14 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="time_benchmark.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/time_benchmark.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/winmltools/convert/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-              <folding>
-                <element signature="e#112#135#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="621">
+              <caret line="115" column="22" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -65,11 +41,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="perf_evaluate.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/perf_evaluate.py">
+      <file leaf-file-name="tf_to_onnx.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/tf_to_onnx.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="396">
+              <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobilenet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3388">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobilenet_pth.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenet_pth.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="torch_mobilenet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytorch_models/torch_mobilenet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobilenet_utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenet_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tensorflow_cpu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tensorflow_models/tensorflow_cpu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="37" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -94,6 +127,9 @@
       <find>K</find>
       <find>time_tensorflow_run</find>
     </findStrings>
+    <replaceStrings>
+      <replace>\\</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,11 +165,18 @@
         <option value="$PROJECT_DIR$/time_benchmark.py" />
         <option value="$PROJECT_DIR$/util/save_tf_model.py" />
         <option value="$PROJECT_DIR$/util/perf_evaluate.py" />
+        <option value="$PROJECT_DIR$/concatenate_pdf.py" />
+        <option value="$PROJECT_DIR$/util/tf2onnx.py" />
+        <option value="$PROJECT_DIR$/util/tf_to_onnx.py" />
+        <option value="$PROJECT_DIR$/pytorch_models/mobilenet.py" />
+        <option value="$PROJECT_DIR$/pytorch_models/mobilenet_utils.py" />
+        <option value="$PROJECT_DIR$/pytorch_models/mobilenet_pth.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-182" />
+    <option name="y" value="13" />
     <option name="width" value="1934" />
     <option name="height" value="1047" />
   </component>
@@ -155,22 +198,7 @@
             <path>
               <item name="PerfCompare" type="b2602c69:ProjectViewProjectNode" />
               <item name="PerfCompare" type="462c0819:PsiDirectoryNode" />
-              <item name="Keras_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfCompare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfCompare" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfCompare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfCompare" type="462c0819:PsiDirectoryNode" />
               <item name="pytorch_models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PerfCompare" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PerfCompare" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -184,18 +212,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PerfCompare\models" />
-      <recent name="D:\PerfCompare\tensorflow\RNN" />
-      <recent name="D:\PerfCompare\tf_mobilenet" />
-      <recent name="D:\PerfCompare" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PerfCompare\models" />
       <recent name="D:\PerfCompare" />
       <recent name="D:\PerfCompare\tensorflow\RNN" />
       <recent name="D:\PerfCompare\tensorflow\mobilenet" />
       <recent name="D:\PerfCompare\pytorch" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PerfCompare\pytorch_models" />
+      <recent name="D:\PerfCompare\models" />
+      <recent name="D:\PerfCompare\tensorflow\RNN" />
+      <recent name="D:\PerfCompare\tf_mobilenet" />
+      <recent name="D:\PerfCompare" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -210,8 +239,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.time_benchmark">
-    <configuration name="keras_mobilenet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.mobilenet_pth">
+    <configuration name="concatenate_pdf" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PerfCompare" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -219,17 +248,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Keras" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Keras/keras_mobilenet.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/concatenate_pdf.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="keras_simple_rnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="mobilenet_pth" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PerfCompare" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -237,29 +266,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Keras" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch_models" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Keras/keras_simple_rnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="mobilenetV1_torch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PerfCompare" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/mobilenetV1_torch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch_models/mobilenet_pth.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,6 +289,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch/pytorch_rnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="tf_to_onnx" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PerfCompare" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/tf_to_onnx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -302,19 +331,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.mobilenetV1_torch" />
       <item itemvalue="Python.pytorch_rnn" />
-      <item itemvalue="Python.keras_simple_rnn" />
-      <item itemvalue="Python.keras_mobilenet" />
       <item itemvalue="Python.time_benchmark" />
+      <item itemvalue="Python.concatenate_pdf" />
+      <item itemvalue="Python.tf_to_onnx" />
+      <item itemvalue="Python.mobilenet_pth" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mobilenet_pth" />
+        <item itemvalue="Python.tf_to_onnx" />
+        <item itemvalue="Python.concatenate_pdf" />
         <item itemvalue="Python.time_benchmark" />
         <item itemvalue="Python.pytorch_rnn" />
-        <item itemvalue="Python.keras_mobilenet" />
-        <item itemvalue="Python.keras_simple_rnn" />
-        <item itemvalue="Python.mobilenetV1_torch" />
       </list>
     </recent_temporary>
   </component>
@@ -344,14 +373,14 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1512118" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18967333" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.44771242" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4869281" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39651415" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.68736386" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3529412" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30283225" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -370,7 +399,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://E:/Pycharm Project/PerfCompare/venv/Lib/site-packages/keras_applications/mobilenet.py</url>
+          <url />
           <line>187</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -399,15 +428,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/torch/nn/modules/rnn.py" />
-    <entry file="file://$PROJECT_DIR$/pytorch/LSTM.py" />
-    <entry file="file://$PROJECT_DIR$/pytorch/pytorch_lstm.py" />
-    <entry file="file://$PROJECT_DIR$/pytorch/pytorch_GRU.py" />
-    <entry file="file://$PROJECT_DIR$/tf_mobilenet/tensorflow_cpu.py" />
-    <entry file="file://$PROJECT_DIR$/tf_mobilenet/mobilenet.py" />
-    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/tensorflow/python/platform/app.py" />
-    <entry file="file://$PROJECT_DIR$/tf_mobilenet/save_tensorflow_model.py" />
-    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/keras/layers/embeddings.py" />
     <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/keras/layers/recurrent.py" />
     <entry file="file://$PROJECT_DIR$/tf_mobilenet/time_benchmark.py" />
     <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/keras/backend/tensorflow_backend.py" />
@@ -421,52 +441,13 @@
     <entry file="file://$PROJECT_DIR$/pytorch/RNN.py" />
     <entry file="file://$PROJECT_DIR$/pytorch/pytorch_simple_rnn.py" />
     <entry file="file://$PROJECT_DIR$/pytorch/pytorch_rnn_2.py" />
-    <entry file="file://$PROJECT_DIR$/tensorflow/RNN/tf_RNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/tensorflow_cpu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/RNN/tf_RNN.py" />
+    <entry file="file://$PROJECT_DIR$/tensorflow/tensorflow_cpu.py" />
     <entry file="file://$PROJECT_DIR$/keras_simple_rnn.py" />
     <entry file="file://$PROJECT_DIR$/torch_vs_tf_vs_keras.py" />
-    <entry file="file://$PROJECT_DIR$/tensorflow/save_tensorflow_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytorch/mobilenetV1_torch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/save_tensorflow_model.py" />
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/pytorch/mobilenetV1_torch.py" />
     <entry file="file://E:/Pycharm Project/PerfCompare/venv/Lib/site-packages/keras_applications/imagenet_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -502,16 +483,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Keras/keras_mobilenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Keras/keras_mobilenet.py" />
     <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/torch/nn/modules/module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -519,113 +491,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pytorch/pytorch_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Keras/keras_simple_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/time_benchmark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2398">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow/mobilenet/mobilenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="134" selection-start-line="113" selection-start-column="2" selection-end-line="134" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenetV1_torch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch/pytorch_rnn.py" />
+    <entry file="file://$PROJECT_DIR$/Keras/keras_simple_rnn.py" />
+    <entry file="file://$PROJECT_DIR$/tensorflow/time_benchmark.py" />
+    <entry file="file://$PROJECT_DIR$/tensorflow/mobilenet/mobilenet.py" />
+    <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenetV1_torch.py" />
     <entry file="file://$PROJECT_DIR$/pytorch_models/pytorch_rnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_models/mobilenet/mobilenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_models/RNN/tf_RNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Keras_models/keras_simple_rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="34" selection-start-line="13" selection-start-column="2" selection-end-line="14" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pytorch_models/torch_mobilenet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_models/tensorflow_cpu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -633,16 +507,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="36" selection-start-line="10" selection-start-column="2" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_models/RNN/tf_RNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/save_tf_model.py">
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/keras/engine/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="343">
+          <caret line="1156" column="72" selection-start-line="1156" selection-start-column="72" selection-end-line="1156" selection-end-column="72" />
+          <folding>
+            <element signature="e#1435#23204#0" />
+            <element signature="e#23266#24039#0" />
+            <element signature="e#24085#25294#0" />
+            <element signature="e#25339#26107#0" />
+            <element signature="e#26155#26944#0" />
+            <element signature="e#26998#27091#0" />
+            <element signature="e#27165#31031#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Keras_models/keras_simple_rnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/concatenate_pdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_models/mobilenet/mobilenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/perf_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -659,13 +583,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/perf_evaluate.py">
+    <entry file="file://$PROJECT_DIR$/util/tf2onnx.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="220">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/tf2onnx/tfonnx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-86">
+          <caret line="2360" column="4" selection-start-line="2360" selection-start-column="4" selection-end-line="2360" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/save_tf_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_models/tensorflow_cpu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/Shared/Python36_64/Lib/site-packages/winmltools/convert/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="115" column="22" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/tf_to_onnx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenet_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="64" column="62" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3388">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch_models/torch_mobilenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch_models/mobilenet_pth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
